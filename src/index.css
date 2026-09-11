@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a1f3f;
+  --color-navy-light: #132d5e;
+  --color-navy-dark: #071530;
+  --color-green-brand: #2e7d32;
+  --color-green-light: #4caf50;
+  --color-green-pale: #e8f5e9;
+  --color-gray-bg: #f5f7fa;
+  --color-gray-border: #e0e0e0;
+  --color-gray-text: #666666;
+  --color-dark-text: #1a1a1a;
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-dark-text);
+  }
+}
+
+.insight-content {
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+}
+
+.insight-content p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-gray-text);
+}
+
+.insight-content h2,
+.insight-content h3,
+.insight-content h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  color: var(--color-navy);
+}
+
+.insight-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+}
+
+.insight-content figure {
+  margin: 1.5rem 0;
+}
+
+.insight-content blockquote {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--color-green-brand);
+  background: rgba(46, 125, 50, 0.06);
+  color: var(--color-navy-dark);
+  font-style: italic;
+}
+
+.insight-content ol,
+.insight-content ul {
+  margin: 1.25rem 0 1.25rem 1.5rem;
+  padding-left: 1rem;
+}
+
+.insight-content li {
+  margin-bottom: 0.75rem;
+}
+
+.insight-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  overflow-x: auto;
+  display: block;
+}
+
+.insight-content th,
+.insight-content td {
+  border: 1px solid var(--color-gray-border);
+  padding: 0.9rem 1rem;
+  text-align: left;
+}
+
+.insight-content th {
+  background: var(--color-gray-bg);
+  font-weight: 600;
+}
+
+.insight-content a {
+  color: var(--color-green-brand);
+  text-decoration: underline;
+}
+
+.insight-content pre,
+.insight-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.insight-content pre {
+  background: #11182710;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.insight-content ul,
+.insight-content ol,
+.insight-content p,
+.insight-content table,
+.insight-content blockquote,
+.insight-content figure {
+  max-width: 100%;
+}
